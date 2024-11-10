@@ -1,0 +1,42 @@
+Starting DLL injection process...
+Opened process successfully.
+Allocated memory in remote process.
+Wrote DLL path to remote process memory.
+Created remote thread.
+DLL injection completed successfully.
+Starting DLL injection process...
+Opened process successfully.
+Allocated memory in remote process.
+Wrote DLL path to remote process memory.
+Created remote thread.
+DLL injection completed successfully.
+Starting DLL injection process...
+Opened process successfully.
+Allocated memory in remote process.
+Wrote DLL path to remote process memory.
+Created remote thread.
+DLL injection completed successfully.
+Starting DLL injection process...
+Opened process successfully.
+Allocated memory in remote process.
+Wrote DLL path to remote process memory.
+Created remote thread.
+DLL injection completed successfully.
+Starting DLL injection process...
+Opened process successfully.
+Allocated memory in remote process.
+Wrote DLL path to remote process memory.
+Created remote thread.
+DLL injection completed successfully.
+Starting DLL injection process...
+Opened process successfully.
+Allocated memory in remote process.
+Wrote DLL path to remote process memory.
+Created remote thread.
+DLL injection completed successfully.
+Starting DLL injection process...
+Opened process successfully.
+Allocated memory in remote process.
+Wrote DLL path to remote process memory.
+Created remote thread.
+DLL injection completed successfully.
