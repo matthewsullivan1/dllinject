@@ -108,13 +108,20 @@ bool InjectDLL(DWORD processId, const char* dllPath) {
 
 int main(int argc, char * argv[]) {
     if(argc < 2){
-        std::cerr << "Usage: injector.exe <target_process>\n";
+        std::cerr << "Usage: injector.exe <target_process> [path_to_dll]\n";
         return 1;
     }
-
     // "C:\\Users\\18163\\Desktop\\dllinject\\dll\\apihook.dll"
     const char* processName = argv[1];
-    const char* dllPath = "C:\\Users\\18163\\Desktop\\dllinject\\dll\\apihook.dll";
+    const char* dllPath;
+
+    // Use hardcoded full path if none is given
+    if(argc < 3){
+        dllPath = "C:\\Users\\18163\\Desktop\\dllinject\\dll\\apihook.dll";
+    } else {
+        dllPath = argv[2];
+    }
+
 
     DWORD processId = GetProcessIdByName(processName);
     if (processId == 0) {
