@@ -106,9 +106,15 @@ bool InjectDLL(DWORD processId, const char* dllPath) {
     return true;
 }
 
-int main() {
-    const char* processName = "notepad.exe";
-    const char* dllPath = ".\\dll\\API Hook.dll";
+int main(int argc, char * argv[]) {
+    if(argc < 2){
+        std::cerr << "Usage: injector.exe <target_process>\n";
+        return 1;
+    }
+
+    // "C:\\Users\\18163\\Desktop\\dllinject\\dll\\apihook.dll"
+    const char* processName = argv[1];
+    const char* dllPath = "C:\\Users\\18163\\Desktop\\dllinject\\dll\\apihook.dll";
 
     DWORD processId = GetProcessIdByName(processName);
     if (processId == 0) {
